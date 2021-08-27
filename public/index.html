@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/codigo.css">
+    <link rel="icon" href="/public/img/Jobs net.png">
+
+    <title>JobsNet - Banco de Currículo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_logo">
+                <a>JobsNet - <span>Banco de Currículo</span></a>           
+            </div>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a to = "/" class="nav__link">Duvidas</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">Github</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="container">
+
+             <div class="name">
+                <h1> Banco de Currículo</h1>
+                <h2> Dados Pessoais </h2>
+            </div>
+
+             <form action="/add" id="cv_form">
+                <fieldset>
+                <div class="form__group">
+                 <label>Nome</label>
+                 <input type="text" for=name id="nome" name="nome" placeholder="Ex.: João" required/>
+                </div>
+
+                <div class="form__group">
+                    <label for="sobrenome" >Sobrenome</label>
+                    <input type="text" for="sobrenome" name="sobrenome" id="sobrenome" placeholder="Ex.: dos Santos" required/>
+                   </div>
+
+                <div class="form__group">
+                 <label for="cargo">Cargo Pretendido</label>
+                 <input type="text" for="cargo" name="cargo" id="cargo" placeholder="Ex.: Analista" required/>
+                </div>
+
+                </fieldset>
+        
+        <fieldset>
+
+            <div class= "form__group">
+                <label for="nascimento" required>Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" min="1900-01-01" max="2021-08-21" required/>
+                <span class="validity"  name="nascimento" id="data" ></span>
+                </div>
+
+            <div class= "form__group">
+                <label itle="estadoCivil" for="estadoCivil">Estado Civil:</label>
+                <SELECT name="estadoCivil">
+                    <OPTION disabled selected value> </OPTION>
+                    <OPTION> Solteiro(a)
+                    <OPTION> Casado(a)
+                    <OPTION> Divorciado(a)
+                    <OPTION> Viúvo(a)
+                    <OPTION> Separado(a)
+                    </SELECT>
+                </div>
+
+                <div class= "form__group">
+                    <label for="name">Sexo:</label>
+                    <select name="sexo" id="sexo" required>
+                        <OPTION disabled selected value>  </OPTION>
+                        <OPTION> Feminino
+                        <OPTION> Masculino
+                        <OPTION> Outro
+                    </SELECT>
+                </div>
+            </fieldset>
+        
+
+ <!--Iniciando parte do  com relação ao cep-->
+
+
+<!--Formulário Cep-->
+            <fieldset>
+                <div class="form__group">
+                    <label for="cep">CEP</label>
+                    <input id="cep" type="text" name= "cep" required/>
+                </div>
+                <div class="form__group">
+                    <label for="endereço">Logradouro</label>
+                    <input name="endereço" id="endereço" type="text" required/>
+                </div>
+                <div class="form__group">
+                    <label for="numero">Número</label>
+                    <input name="numero" id="numero" type="number" required/>
+                </div>
+            </fieldset>
+
+        <fieldset>
+            <div class="form__group">
+                <label for="complemento">Complemento</label>
+                <input name="complemento" id="complemento" type="text" 
+                />
+            </div>
+            <div class="form__group">
+                <label for="bairro">Bairro</label>
+                <input name="bairro" id="bairro" type="adress" required/>
+            </div>   
+            <div class="form__group">
+                <label name="estado" for="uf">Estado</label>
+                    <select id="uf">
+                    <OPTION disabled selected value>  </OPTION>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    </select>
+            </div>
+
+            <div class="form__group">
+                <label for="cidade">Cidade</label>
+                <input nome="cidade" id="cidade" type="text" required/>
+                </div>  
+
+                </fieldset>
+	
+
+<!-- Agora é o celulaaaaaaaaaaaaaaar-->
+        
+        <fieldset>
+             <div class="form__group">
+             <label for="celular"><strong>Celular</strong></label>
+             <input type="text" name="celular" id="celular" minlenght="9" maxlength="12" placeholder="Ex.: DDD + Número" required/>
+             </div>
+       
+            <div class="form__group">
+            <label for="recado"><strong>Telefone Recado</strong></label>
+            <input type="text" name="recado" id="recado" minlenght="8" maxlength="11" placeholder="Ex.: DDD + Número" required/>
+            </div>
+
+            <div class="form__group">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" id="email" placeholder="Ex.: joãomel@email.com" required/>
+    
+            </div>
+        </fieldset>
+
+          <div class="name">
+
+            <h2>Documentos</h2>
+          </div>
+          <fieldset class="fieldset__padding">
+            <div class="form__group">
+            <label for="cpf"><strong>CPF</strong></label>
+            <input type="text" name="cpf" id="cpf" minlenght="11" maxlength="11" placeholder="Ex.: 12312312345" required>
+            <span id="erro-cpf"></span>
+        </div>
+
+            <div class="form__group">
+             <label for="rg"><strong>Identidade</strong></label>
+             <input type="text" name="rg" id="rg" minlenght="9" maxlength="9" placeholder="Ex.: 121231234" required>
+            </div>
+
+          <div class="form__group">
+            <label for="veiculo"><strong>Veículo</strong></label>
+            <SELECT NAME="veiculo" id="veiculo" >
+                <OPTION disabled selected value>  </OPTION>
+                <OPTION> Sim
+                <OPTION> Não 
+            </SELECT>
+        </div>
+
+        <div class="form__group">
+            <label for="cnh"><strong>Habilitação</strong></label>
+            <SELECT NAME="cnh" id="cnh" >
+                <OPTION disabled selected value>  </OPTION>
+                <OPTION> Não possuo
+                <OPTION> A
+                <OPTION> B
+                <OPTION> C
+                <OPTION> D
+                <OPTION> E
+            </SELECT>
+        </div>
+    </fieldset>
+ 
+    <div>
+        <button type="submit" id="submit-btn"><i >Enviar Currículo</button>
+       
+    </div>
+
+     </section>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

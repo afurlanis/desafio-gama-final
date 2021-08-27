@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+ 
+
+ul{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    
+    list-style: none;
+}
+
+nav {
+    display:flex;
+    justify-content:space-between;
+    height:80px;
+    width:99%;
+    padding: 0 24px;
+    align-items: center;
+    margin: 0.5rem;
+    background: rgba(207, 207, 207, 0.836);
+
+}
+
+nav .nav_logo {
+    margin-left: 50px;
+    font-size: 1.3rem;
+
+}
+
+nav .nav_logo span {
+    color: rgb(197, 15, 182);
+    font-weight: bolder;
+}
+
+nav .nav__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+}
+
+nav .nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+ 
+}
+
+.container {
+    width: 99%;
+    background: rgb(199, 199, 199);
+    justify-content:center;
+    align-items:center;
+    padding: 20px 20px;
+    height: 800px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    }
+
+.container h1{
+    font-weight: 700;
+    font-style: bold;
+    line-height: 2.0em;
+    letter-spacing: 2px;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 1.6rem;
+    color:rgb(0, 0, 0);
+}
+
+.container .name h1:nth-child(1) {
+    font-size: 30px;
+}
+
+.container h2{
+    font-weight: 700;
+    font-style: bold;
+    line-height: 2.0em;
+    letter-spacing: 2px;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgb(197, 15, 182) ;
+}
+
+.container .name h2:nth-child(1) {
+    font-size: 26px;
+}
+
+.container .name h5{
+    font-size: 25px;
+}
+
+
+#about p{
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 99%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+fieldset {
+    border: none;
+    outline: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__group label {
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #333;
+    margin: 10px 0;
+}
+
+.form__group input {
+    outline: 0;
+    border: 1px solid #D0D0D0;
+    background: #F9F9F9;
+    height: 40px;
+    width: 300px;
+    color: #000;
+} 
+
+::placeholder {
+    padding-left: 10px;
+}
+
+.form__group select {
+    outline: 0;
+    border: 1px solid #D0D0D0;
+    background: #FFFFFF;
+    height: 40px;
+    width: 300px;
+    color: #000;
+}
+
+.fieldset__padding {
+    padding-bottom: 20px;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 490px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+
