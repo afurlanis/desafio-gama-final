@@ -3,7 +3,6 @@
 <h1 align="center">
     <a href="https://nodejs.org/en/">🔗 Node.js/a>
 </h1>
-	
 <p align="center">🚀 O treinamento teve como objetivo: Desenvolvimento das Soft Skills, e das Hard Skills como: Front-end e Back-end. Sendo assim, foi proposto um desafio para criarmos um Banco de Currículos para uma empresa chamada JobsNET</p>
 
 <h4 align="center"> 
@@ -74,7 +73,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Agradeço a todos os colegas que me ajudaram. 
 Principalmente:
-Gabriela Di Poggio, Leandro de Araujo, Claro Rosadas, João Vitor, Robson Rosa, L. Gustavo e muitos outros.
+Gabriela Di Poggio, Leandro de Araujo, Claro Rosadas, Nina, João Vitor, Robson Rosa, L. Gustavo e muitos outros.
 Aaaah e um agradecimento especial ao querido Mestre Sato e a nossa querida Regina, vulgo Yellow Belt.
 
 ### Autor

@@ -1,0 +1,147 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "description": "API BD de Currículos.",
+        "version": "1.0.0",
+        "title": "API de manipulação de Banco de currículos JobsNet",
+        "contact": {
+          "email": "amandamelaniasfurlanis@gmail.com"
+        }
+      },
+        "servers": [
+          {
+          "url" : "http://localhost:8077",
+          "description" : "abrir aplicação "
+          }
+      ],
+
+      "schemes": [
+        "https"
+      ],
+      "paths": {
+        "/add": {
+          "post": {
+            "tags": [
+              "banco-de-curriculos-JobsNET"
+            ],
+            "summary": "Curriculo de Candidatos",
+            "description": "Rota de cadastro de usuário; recebe: nome, sobrenome, cargo, nascimento, sexo, estadoCivil, cep, endereco, numero, complemento, bairro, estado, cidade, celular, recado, email, cpf, rg, veiculo, cnh",
+            "operationId": "cadastroCandidato",
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "in": "body",
+                "name": "body",
+                "description": "Dados Pessoais",
+                "required": true,
+                "schema": {
+                  "properties": {
+                    "nome": {
+                      "type": "string",
+                      "example": "Amanda"
+                    },
+                    "sobrenome": {
+                        "type": "string",
+                        "example": "Santos"
+                      },
+                    "cargo": {
+                      "type": "string",
+                      "example": "Analista"
+                    },
+                    "nascimento": {
+                      "type": "string",
+                      "example": "22/11/1977"
+    
+                    },
+                    "estadoCivil": {
+                      "type": "string",
+                      "example": "Casado(a)"
+                    },
+                    "sexo": {
+                      "type": "string",
+                      "example": "Feminino"
+                    },
+                    "cep": {
+                      "type": "string",
+                      "example": "07231190"
+                    },
+                    "endereço": {
+                      "type": "string",
+                      "example": "Rua ....."
+                    },
+                    "numero": {
+                      "type": "string",
+                      "example": "77"
+                    },
+                    "complemento": {
+                      "type": "string",
+                      "example": "bloco 12 apartamento 123"
+                    },
+                    "bairro": {
+                      "type": "string",
+                      "example": "Jardim Primavera"
+                    },
+                    "estado": {
+                      "type": "string",
+                      "example": "SP"
+                    },
+                    "cidade": {
+                      "type": "string",
+                      "example": "Guarulhos"
+                    },
+                    "celular": {
+                      "type": "string",
+                      "example":"99999-0909"
+                    },
+                    "recado": {
+                      "type": "string",
+                      "example": ""
+                    },
+                    "email": {
+                      "type": "string",
+                      "example": "exemplolegal@email.com"
+                    },
+                    "cpf": {
+                      "type": "string",
+                      "example": "12345612312"
+                    },
+                    "rg": {
+                      "type": "string",
+                      "example": "123456712"
+                    },
+                    "veiculo": {
+                      "type": "string",
+                      "example": "sim"
+                    },
+                    "cnh": {
+                      "type": "string",
+                      "example": "b"
+                    }
+                  },
+                  "required": [
+                    "cpf"
+                  ]
+                }
+              }
+            ],
+            "responses": {
+              "301": {
+                "description": "Cadastro efetuado, redireciona para a página de conclusão."
+              },
+              "400": {
+                "description": "Formulário inválido (e.g. CPF já cadastrado)"
+              }
+           }
+          }
+        }
+      },
+      "externalDocs": {
+        "description": "Repositorio no GIT",
+        "url": "https://github.com/afurlanis/desafio-gama-final"
+      }
+    }

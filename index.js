@@ -9,6 +9,11 @@ app.use(express.urlencoded({
 }))
 app.use(express.json())
 
+const swaggerUI = require('swagger-ui-express');
+const swaggerDocs = require('./swagger.json');
+
+app.use('/documents', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
+
 
 app.post('/add', async function (req, res) {
     cpf_matches = await User.findOne({
@@ -53,5 +58,5 @@ app.post('/add', async function (req, res) {
 
 const PORT = 8077
 app.listen(PORT, () =>{
-    console.log("Servidor Rodando na url http://localhost:8077");
+    console.log("Servidor Rodando na url http://localhost:8077")
 });
