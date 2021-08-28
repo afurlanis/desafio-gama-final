@@ -54,10 +54,10 @@ Para usar o banco de curriculos, primeiramente você deve se cadastrar no MongoD
 
 Para verificar se a Aplicação está funcionando basta digitar no terinal nodemon index.js , se tudo estiver correto aparecera uma mensagem de sucesso, e tudo que for digitado no formulário será registrado na nuvem e aparecera no seu terminal! 
 
-### 🛠 Acessando as paginas 
-Pagina Inicial: https://jobsnetbancodecvs.herokuapp.com/
-Pagina de Currículo Enviado: https://jobsnetbancodecvs.herokuapp.com/submitted.html
-Swagger: https://jobsnetbancodecvs.herokuapp.com/documents/	
+### 🚀 Acessando as paginas 
+- Pagina Inicial: https://jobsnetbancodecvs.herokuapp.com/
+- Pagina de Currículo Enviado: https://jobsnetbancodecvs.herokuapp.com/submitted.html
+- Swagger: https://jobsnetbancodecvs.herokuapp.com/documents/	
 	
 ### 🛠 Tecnologias
 
