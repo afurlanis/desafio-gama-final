@@ -56,7 +56,7 @@ app.post('/add', async function (req, res) {
 })
 
 
-const PORT = 8077
+const PORT =  process.env.PORT || 8077
 app.listen(PORT, () =>{
     console.log("Servidor Rodando na url http://localhost:8077")
 });
